@@ -19,7 +19,9 @@ BankruptcyHistory
 ...and others
 
 Each row simulates real-world data with daily variability to reflect practical financial modeling conditions. Categorical variables were encoded appropriately, and special attention was given to the LoanApproved class distribution.
+
 🔍 Machine Learning Models Used
+
 We trained and evaluated the following models:
 
 Logistic Regression
