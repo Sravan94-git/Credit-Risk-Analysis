@@ -1,4 +1,5 @@
 🏦 Credit Risk Analysis using Machine Learning
+
 Credit risk analysis is critical in determining the chance of borrowers defaulting on their loans. It enables financial institutions to make informed lending decisions and mitigate potential losses. This project focuses on analyzing credit risk using various machine learning algorithms implemented in both PySpark and scikit-learn. Through preprocessing, model training, and performance evaluation, this study compares algorithm efficiency in handling large-scale financial data.
 
 📁 Dataset Description
