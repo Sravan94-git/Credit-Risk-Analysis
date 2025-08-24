@@ -1,59 +1,60 @@
-🏦 Credit Risk Analysis using Machine Learning
+# 🏦 Credit Risk Analysis using Machine Learning
 
-Credit risk analysis is critical in determining the chance of borrowers defaulting on their loans. It enables financial institutions to make informed lending decisions and mitigate potential losses. This project focuses on analyzing credit risk using various machine learning algorithms implemented in both PySpark and scikit-learn. Through preprocessing, model training, and performance evaluation, this study compares algorithm efficiency in handling large-scale financial data.
+Credit risk analysis is a crucial process for financial institutions to assess the likelihood of borrowers defaulting on their loans. This project leverages various machine learning algorithms to analyze credit risk, with implementations in both **PySpark** and **scikit-learn**. By comparing the efficiency and performance of these algorithms on a large-scale dataset, this study provides valuable insights for building robust credit scoring systems.
 
-📁 Dataset Description
-The dataset contains 1,000,000 entries and 51 features, capturing both financial and demographic aspects of loan applicants. The target variable is LoanApproved, indicating whether the loan was approved (1) or not (0).
+## 📁 Dataset Description
 
-🔑 Key Features
-CreditScore
+The dataset used for this project comprises **1,000,000 entries** and **51 features**. It captures both financial and demographic information of loan applicants.
 
-AnnualIncome
+* **Target Variable**: `LoanApproved` (1 for approved, 0 for not approved)
+* **Key Features**:
+    * `CreditScore`
+    * `AnnualIncome`
+    * `LoanAmount`
+    * `DebtToIncomeRatio`
+    * `BankruptcyHistory`
+    * ...and more
 
-LoanAmount
+The data simulates real-world conditions with daily variability. Categorical variables were appropriately encoded, and special attention was paid to the class distribution of the `LoanApproved` target.
 
-DebtToIncomeRatio
+## 🔍 Machine Learning Models Used
 
-BankruptcyHistory
+The following machine learning models were trained and evaluated:
 
-...and others
+* Logistic Regression
+* Random Forest
+* Naive Bayes
+* Gradient Boosting
 
-Each row simulates real-world data with daily variability to reflect practical financial modeling conditions. Categorical variables were encoded appropriately, and special attention was given to the LoanApproved class distribution.
+Each model was implemented using two different frameworks to compare their performance and scalability:
 
-🔍 Machine Learning Models Used
+* ✅ scikit-learn
+* ✅ PySpark MLlib
 
-We trained and evaluated the following models:
+## 📈 Key Insights
 
-Logistic Regression
+* **PySpark Random Forest** achieved the **highest overall performance** in terms of F1-Score, making it the superior choice for handling large-scale parallel processing.
+* **scikit-learn Gradient Boosting** excelled in **Recall**, demonstrating its effectiveness when the cost of missing a defaulter is significantly higher than a false positive.
 
-Random Forest
+These findings highlight the trade-offs between different models and frameworks, helping financial institutions to choose the most suitable algorithm for their specific risk mitigation goals.
 
-Naive Bayes
+## 🚀 How to Run the Project
 
-Gradient Boosting
+Follow these steps to set up and run the analysis on your local machine.
 
-Each of these models was implemented using:
+1.  **Clone the Repository**
+    ```bash
+    git clone [https://github.com/yourusername/credit-risk-analysis.git](https://github.com/yourusername/credit-risk-analysis.git)
+    cd credit-risk-analysis
+    ```
+2.  **Launch Jupyter Notebook**
+    ```bash
+    jupyter notebook
+    ```
+3.  **Run the Notebook**
+    * A new browser window or tab will open with the Jupyter interface.
+    * Locate and open the `credit_risk_analysis.ipynb` (or similar relevant notebook file).
+    * Run the cells sequentially to perform data preprocessing, model training, and evaluation.
 
-✅ scikit-learn
-
-✅ PySpark MLlib
-
-🔍 Key Insights
-PySpark Random Forest achieved the highest overall performance in terms of F1-Score, making it the best choice for large-scale parallel processing.
-
-scikit-learn Gradient Boosting excelled in Recall, making it ideal when missing a defaulter is costlier than a false positive.
-
-These insights help institutions build more robust and scalable credit scoring systems.
-
-🚀 How to Run
-1. Clone the Repository
-git clone https://github.com/yourusername/credit-risk-analysis.git
-cd credit-risk-analysis
-2. Launch Jupyter Notebook
-jupyter notebook
-3. Run the Notebook
-Open the credit_risk_analysis.ipynb or relevant notebook file from the browser interface that appears.
-
-Run the cells sequentially to preprocess the data, train models, and view evaluation results.
-
-Note: Ensure you have Jupyter installed (pip install notebook) if it's not included in your environment.
+**Note**: If you do not have Jupyter installed, you can install it via pip:
+`pip install notebook`
