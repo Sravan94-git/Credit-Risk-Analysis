@@ -35,10 +35,3 @@ Each model was implemented using two different frameworks to compare their perfo
 
 * **PySpark Random Forest** achieved the **highest overall performance** in terms of F1-Score, making it the superior choice for handling large-scale parallel processing.
 * **scikit-learn Gradient Boosting** excelled in **Recall**, demonstrating its effectiveness when the cost of missing a defaulter is significantly higher than a false positive.
-
-These findings highlight the trade-offs between different models and frameworks, helping financial institutions to choose the most suitable algorithm for their specific risk mitigation goals.
-
-    * Run the cells sequentially to perform data preprocessing, model training, and evaluation.
-
-**Note**: If you do not have Jupyter installed, you can install it via pip:
-`pip install notebook`
