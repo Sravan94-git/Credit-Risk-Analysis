@@ -7,6 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **FinPulse** is an AI-powered Credit Risk Analysis Platform that combines **Machine Learning**, **Big Data Processing**, **React**, **ASP.NET Core Web API**, and **Microsoft Azure** to deliver intelligent loan default predictions. The platform analyzes large-scale financial datasets, provides secure real-time risk assessments through a modern and intuitive user interface, and leverages cloud-native services for scalable deployment, authentication, and prediction history management.
+
 ---
 
 # 📊 Dataset Description
